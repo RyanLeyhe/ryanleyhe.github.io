@@ -1,0 +1,31 @@
+# Site settings
+title: Ryan Leyhe
+description: A personal portfolio
+baseurl: "/" # the subpath of your site, e.g., /blog
+url: "https://ryanleyhe.github.io" # the base hostname & protocol for your site
+
+# Theme settings
+theme: jekyll-theme-minimal 
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Additional custom settings
+author:
+  name: Ryan Leyhe
+  bio: student
+  email: ryanleyhe8@gmail.com
+
+# GitHub Pages settings
+github_pages:
+  enabled: true
+  source_branch: main
+  publish_branch: gh-pages
