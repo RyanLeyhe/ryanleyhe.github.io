@@ -208,6 +208,12 @@ section {
     height: 2rem;
 }
 
+.linkedin-icon-top,
+.github-icon-top {
+    width: 45px;
+    height: auto;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -262,15 +268,39 @@ section {
     position: relative;
 }
 
+.text-container {
+    display: block;
+    margin-left: 75px;
+    position: absolute;
+    top: 390px;
+    left: 330px;
+    text-align: left;
+    width: 300px;
+}
+
+.text-container p {
+    width: 200%;
+    margin: 0;
+    padding: 0;
+}
+
 .about-containers {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .about-details-container {
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    max-width: 400px; 
+    margin-left: 200px;
+}
+
+.details-container {
+    width: 300px;
 }
 
 .about-containers,
@@ -301,11 +331,16 @@ section {
 .section-container {
     gap: 4rem;
     height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
+    float: left;
     margin: auto 0;
 }
 
@@ -326,6 +361,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .about-container {
@@ -347,11 +383,18 @@ section {
     justify-content: space-around;
 }
 
-article {
+.article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
+}
+
+.article-container-CI,
+.article-container-JUnit,
+.article-container-BI,
+.article-container-Git {
+    margin-left: 10px;
 }
 
 article .icon {
@@ -419,6 +462,7 @@ article .icon {
 
 .contact-icon {
     cursor: default;
+    padding-right: 10px;
 }
 
 .linkedin-icon {
