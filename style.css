@@ -376,11 +376,18 @@ section {
 
 .article-container {
     display: flex;
-    text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
 }
 
 .article {
