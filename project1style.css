@@ -222,5 +222,11 @@ h2 {
     max-width: 45%;
 }
 
+.project2demo .video-container {
+    width: 50%;
+}
 
+.project2demo video {
+    width: 100%;
+}
 
