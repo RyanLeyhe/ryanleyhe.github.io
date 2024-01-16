@@ -112,6 +112,12 @@ section {
     border-radius: 2rem;
 }
 
+.play-btn-container {
+    position: absolute;
+    right: 25%;
+    bottom: 55%;
+}
+
 .btn-color-1, 
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -163,8 +169,58 @@ section {
     bottom: -54rem;
 }
 
+/* Video */
+
+.video-container {
+    display: flex;
+    float: left;
+    width: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#backtest .video-container {
+    width: 53%;
+    height: 70%;
+}
+
+#live-Look .video-container {
+    width: auto;
+    height: auto;
+}
+
+#live-look .video-container video {
+    width: 600px;
+}
+
+/* Images */
+
+.image-container {
+    float: left;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 /* Headers */
 
 h2 {
     font-size: 3em;
 }
+
+/* Text */
+
+.description {
+    float: right;
+    line-height: 30px;
+    max-width: 45%;
+}
+
+
+

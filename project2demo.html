@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Bot Project</title>
+    <title>Pygbag/Pygame Project</title>
     <link rel="stylesheet" href="project1style.css">
 </head>
 <body>
     <section id="how-it-works" class="how-it-works__section">
         <h2>How it works:</h2>
-        <img src="pygameImage.jpg" alt="Image 1">
-        <p>Description for section 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="btn-container">
-            <button class="btn btn-color-1" onclick="location.href='https://ryanleyhe.github.io/pygbag/SinglePlayerPong/index.html'">
+        
+        <div class="video-container">
+            <video src="videos/pygbagVideo.mp4" width="900" controls autoplay muted loop></video>
+        </div>
+
+        <p class="description">
+            I used Pygbag to convert my asynchronous pygame code into a web-compatible format. Pygbag is a tool that enables the 
+            use of pygame in the browser by compiling it to JavaScript using tools like Pyodide and Emscripten. It's 
+            effectively Python WebAssembly that runs python code directly in the browser. After using the Pygbag build 
+            I uploaded the subsequent web files to my website's github repository so that I could link the game to this 
+            button. Just click "Ready to start!" after loading!
+        </p>
+
+        <div class="play-btn-container">
+            <button id="openLinkBtn" class="btn btn-color-1" onclick="openLinkInNewTab('https://ryanleyhe.github.io/pygbag/SinglePlayerPong/index.html')">
                 Play!
             </button>
         </div>
+
     </section>
+
+    <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='https://ryanleyhe.github.io'">
+            Home
+        </button>
+
+        <button class="btn btn-color-1 project-btn" onclick="openLinkInNewTab('https://github.com/RyanLeyhe/ryanleyhe.github.io/tree/main/pygbag/SinglePlayerPong')">
+            Github
+        </button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

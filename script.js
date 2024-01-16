@@ -11,3 +11,7 @@ function scrollToSection(sectionId) {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+function openLinkInNewTab(url) {
+    window.open(url, '_blank');
+}

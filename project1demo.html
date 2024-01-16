@@ -5,30 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Bot Project</title>
     <link rel="stylesheet" href="project1style.css">
+    <link rel="stylesheet" href="mediaquieries.css">
+
 </head>
-<body>
+<body class="project1-demo">
     <section id="how-it-works" class="how-it-works__section">
         <h2>How it works:</h2>
-        <img src="image1.jpg" alt="Image 1">
-        <p>Description for section 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="image-container">
+            <img src="assets/tradingImage1.png" alt="Image 1">
+        </div>
+        <p class="description">This Python script integrates Alpaca's live trading API and Lumibot's backtesting
+            capabilities to implement a trend-following algorithm for trading the GLD (Gold) 
+            ETF. The script first checks the market status using Alpaca's clock API and waits 
+            for it to open if closed. It then employs the Lumibot framework to execute a 
+            trend strategy based on the crossover of 9-day and 21-day moving averages. 
+            Buy and sell signals trigger corresponding actions, and the entire process is 
+            encapsulated in a user-friendly AlpacaHelper class. The script also offers the 
+            flexibility to switch between live trading and backtesting.</p>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow1" onclick="scrollToSection('backtest')">
     </section>
 
     <section id="backtest" class="backtest__section">
-        <h2>Backtest</h2>
-        <img src="image2.jpg" alt="Image 2">
-        <p>Description for section 2 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Backtest:</h2>
+
+        <div class="video-container">
+            <iframe src="assets/backtest.html" width="900" height="600"></iframe>
+        </div>
+
+        <p class="description">
+            The backtesting functionality allows you to evaluate 
+            the effectiveness of the trading strategy without risking real capital. This 
+            involves simulating the execution of trades based on historical market 
+            data to assess how the strategy would have performed over a specific time 
+            period. The user specifies a start and end date for the backtesting period 
+            which defines the historical data range over which the strategy will be 
+            evaluated. The code retrieves historical market data for the specified period. 
+            In this case, it uses Yahoo Finance data for backtesting.
+        </p>
+
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow2" onclick="scrollToSection('live-Look')">
     </section>
 
     <section id="live-Look" class="live-look__section">
-        <h2>Live Look</h2>
-        <img src="image3.jpg" alt="Image 3">
-        <p>Description for section 3 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Live Look:</h2>
+        
+        <div class="video-container">
+            <video src="videos/tradingVideo2.mp4" width="725" controls autoplay muted loop></video>
+        </div>
+
+        <p class="description">
+            On the right side is a live look at the trading bot in action. The script 
+            dynamically executes, implementing the strategy in real-time. On the left 
+            side, you can see the trade data as the bot executes. 
+        </p>
         
         <div class="btn-container">
             <button class="btn btn-color-1" onclick="location.href='https://ryanleyhe.github.io'">
                 Home
+            </button>
+
+            <button class="btn btn-color-1 project-btn" onclick="openLinkInNewTab('https://github.com/RyanLeyhe/AlgoTrading')">
+                Github
             </button>
         </div>
 

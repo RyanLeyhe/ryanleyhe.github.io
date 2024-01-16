@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
@@ -51,6 +51,56 @@
     .about-containers {
         margin-top: 0;
     }
+
+    /* project1demo */
+
+    /*
+    .project1-demo *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    */
+
+    .project1-demo section {
+        padding-top: 4vh;
+        height: 96vh;
+        margin: 0 8rem;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
+    
+    .project1-demo .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .video-container iframe,
+    .video-container video {
+        max-width: auto; /* Take full width on smaller screens */
+        max-height: auto; /* Allow the height to adjust based on content */
+        float: left;
+    }
+
+    .project1-demo .description {
+        margin-top: 2rem;
+        float: right;
+    }
+
+    .project1-demo body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project1-demo #how-it-works,
+    .project1-demo #backtest,
+    .project1-demo #live-Look {
+        padding: 2rem;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -195,5 +245,4 @@
     .text-container {
         text-align: justify;
     }
-
 }
