@@ -170,20 +170,8 @@
         text-align: center;
     }
 
-    #projects .about-containers {
-        /* margin-left: -10px; */
-    }
-
     #projects {
         margin-bottom: 150px;
-    }
-
-    #contact .contact-info-upper-container {
-        /* margin-left: -5px; */
-    }
-
-    .section__pic-container {
-        /* padding-left: 90px; */
     }
 
     .text-container {
