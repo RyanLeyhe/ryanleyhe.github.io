@@ -18,6 +18,8 @@
 
     #about .section-contianer {
         display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     #about .about-details-container {
@@ -33,7 +35,7 @@
 
     #about .arrow {
         position: absolute;
-        right: 5rem;
+        right: 4.5rem;
     }
 
     #projects {
@@ -50,6 +52,10 @@
     #projects .arrow {
         position: absolute;
         right: 0rem;
+    }
+
+    #contact {
+        margin-top: 5rem;
     }
 
 }
@@ -94,55 +100,6 @@
 
     .about-containers {
         margin-top: 0;
-    }
-
-    /* project1demo */
-
-    /*
-    .project1-demo *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    */
-
-    .project1-demo section {
-        padding-top: 4vh;
-        height: 96vh;
-        margin: 0 8rem;
-        box-sizing: border-box;
-        min-height: fit-content;
-    }
-    
-    .project1-demo .btn-container {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .video-container iframe,
-    .video-container video {
-        max-width: auto; /* Take full width on smaller screens */
-        max-height: auto; /* Allow the height to adjust based on content */
-        float: left;
-    }
-
-    .project1-demo .description {
-        margin-top: 2rem;
-        float: right;
-    }
-
-    .project1-demo body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project1-demo #how-it-works,
-    .project1-demo #backtest,
-    .project1-demo #live-Look {
-        padding: 2rem;
-        justify-content: center;
     }
 
 }
@@ -279,6 +236,8 @@
     .text-container {
         text-align: center;
         padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 

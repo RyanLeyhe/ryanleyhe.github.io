@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +19,7 @@ html {
 
 p {
     color: rgb(85, 85, 85);
+    text-align: center;
 }
 
 /* TRANSITION */
@@ -68,11 +70,14 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 6rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+#section .how-it-work__section {
+    max-height: 500px;
 }
 
 .section-container {
@@ -80,7 +85,11 @@ section {
 }
 
 #live-Look {
-    margin-top: 90px; /* Adjust the margin-bottom value as needed */
+    margin-top: 10rem; /* Adjust the margin-bottom value as needed */
+}
+
+#live-look .video-container video {
+    max-width: 500px;
 }
 
 
@@ -97,12 +106,12 @@ section {
     margin-bottom: 40px;
 }
 
-.btn-container {
+/* .btn-container {
     position: absolute;
     bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .btn {
     font-weight: 600;
@@ -110,12 +119,6 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-}
-
-.play-btn-container {
-    position: absolute;
-    right: 25%;
-    bottom: 55%;
 }
 
 .btn-color-1, 
@@ -166,41 +169,41 @@ section {
 .arrow2 {
     position: absolute;
     right: 5rem;
-    bottom: -54rem;
+    bottom: -50rem;
 }
 
 /* Video */
 
 .video-container {
     display: flex;
-    float: left;
     width: auto;
     border: 2px solid black;
     box-sizing: border-box;
-    margin-right: 10px;
 }
 
 #backtest .video-container {
-    width: 53%;
-    height: 70%;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
 }
 
-#live-Look .video-container {
-    width: auto;
-    height: auto;
+#live-look .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
-#live-look .video-container video {
-    width: 600px;
+.video-container video {
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
 }
 
 /* Images */
 
 .image-container {
-    float: left;
     width: auto;
-    height: auto;
-    box-sizing: border-box;
+    max-width: 400px;
 }
 
 .image-container img {
@@ -217,16 +220,27 @@ h2 {
 /* Text */
 
 .description {
-    float: right;
-    line-height: 30px;
-    max-width: 45%;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+/* Project 2*/
+
+.project2demo .btn-container {
+    margin-bottom: 2rem;
 }
 
 .project2demo .video-container {
-    width: 50%;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
 }
 
 .project2demo video {
     width: 100%;
+    max-width: 900px;
+    height: 100%;
 }
-
