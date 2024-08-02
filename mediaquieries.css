@@ -1,13 +1,57 @@
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1201px) {
     #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 80vh;
+        flex-direction: row;
     }
 
-    .about-containers,
-    .section-container {
-        flex-wrap: wrap;
+    #profile .section__text {
+        justify-content: center;
+        padding-top: 2rem;
     }
+
+    #about {
+        margin: 0 1rem;
+    }
+
+    #about .section-contianer {
+        display: flex;
+    }
+
+    #about .about-details-container {
+        flex-direction: row;
+    }
+
+    #about .text-container p {
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about .arrow {
+        position: absolute;
+        right: 5rem;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+    }
+
+    #projects .experience-details-container .about-containers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #projects .arrow {
+        position: absolute;
+        right: 0rem;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -107,7 +151,7 @@
 
     body {
         text-align: center;
-        margin-left: 20px;
+        /* margin-left: 20px; */
         padding: 0;
     }
 
@@ -122,12 +166,12 @@
     .project-container,
     #contact {
         margin: auto;
-        width: 100%; 
+        /* width: 100%; */
         text-align: center;
     }
 
     #projects .about-containers {
-        margin-left: -10px;
+        /* margin-left: -10px; */
     }
 
     #projects {
@@ -135,24 +179,26 @@
     }
 
     #contact .contact-info-upper-container {
-        margin-left: -5px;
+        /* margin-left: -5px; */
     }
 
     .section__pic-container {
-        padding-left: 90px;
+        /* padding-left: 90px; */
     }
 
     .text-container {
-        position: absolute;
-        margin-top: 27rem; /* Adjust the margin-top as needed */
-        margin-left: -20.5rem;
-        text-align: center;
-        width: 93%; /* Use 100% width to make it full-width */
+        /* position: absolute;
+        margin-top: 27rem; 
+        margin-left: -20.5rem; */
+        /* text-align: center; */
+        /* width: 100%; */
         display: flex;
+        /* flex-direction: column; */
+        /* box-sizing: border-box; */
     }
 
     .section__text__p1 {
-        padding-top: 200px;
+        padding-top: 1rem;
     }
 
     #contact,
@@ -166,12 +212,12 @@
     }
 
     #experience .details-container {
-        margin-left: 0.5rem;
+        /* margin-left: 0.5rem; */
         width: 300px;
     }
 
     #profile {
-        height: 83vh;
+        height: 80vh;
         margin-bottom: -20;
     }
 
@@ -220,7 +266,7 @@
     }
 
     #about .about-containers {
-        margin-left: -10px;
+        /* margin-left: -10px; */
         gap: 0.25rem;
     }
 
@@ -243,6 +289,115 @@
     }
 
     .text-container {
-        text-align: justify;
+        text-align: center;
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hamburger-nav {
+        justify-content: flex-end; /* Aligns content to the right */
+    }
+
+    .logo {
+        padding-right: 10rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section {
+        margin: 0 1rem;
+        /* padding: 1rem; */
+    }
+
+    .section-container {
+        display: flex;
+        justify-content: center; /* Center child items horizontally */
+        align-items: center; /* Center child items vertically if needed */
+        width: 100%; /* Ensure it takes up the full width */
+    }
+    
+    /* Ensure about-details-container uses flexbox and stacks items in a column */
+    .about-details-container {
+        display: flex;
+        flex-direction: column; /* Stack child items vertically */
+        align-items: center; /* Center child items horizontally */
+        gap: 1rem; /* Adjust gap between items */
+        width: 100%; /* Ensure it takes up the full width */
+    }
+    
+    /* Adjust about-containers styles */
+    .about-containers {
+        width: 100%; /* Ensure it takes up the full width */
+        max-width: 1200px; /* Optional: Limit max width if needed */
+    }
+
+    .text-container {
+        flex-direction: column;
+        width: 100%; /* Ensure it takes up the full width */
+        text-align: center; /* Center text inside */
+        padding-top: 1rem; /* Add padding to create space above */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    .text-container p {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .section__pic-container {
+        height: 150px;
+        width: 150px;
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+.text-container p {
+    width: auto;
+}
+
+    .details-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex; /* Optional: If details-container has child elements */
+        flex-direction: column; /* Adjust as needed */
+        justify-content: center; /* Center content vertically if needed */
+        align-items: center; /* Center content horizontally */
+        width: auto; /* Adjust width as needed */
+        max-width: 100%; /* Ensure it doesn’t exceed the width of its parent */
+        padding: 1rem; /* Optional: Add padding if needed */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .footer p {
+        padding: 1rem;
+    }
+
+    footer {
+        padding-top: 3rem;
     }
 }
