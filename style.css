@@ -14,6 +14,9 @@ body {
 
 html {
     scroll-behavior: smooth;
+    min-width: 500px;
+    min-height: 500px;
+    overflow: scroll;
 }
 
 p {
@@ -163,6 +166,7 @@ section {
     gap: 5rem;
     height: 80vh;
     flex-direction: column;
+    min-height: 550px;
 }
 
 .section__pic-container {
@@ -272,6 +276,7 @@ section {
 
 #about {
     position: relative;
+    min-height: 800px;
 }
 
 .text-container {
@@ -357,6 +362,7 @@ section {
 
 #experience {
     position: relative;
+    min-height: 800px;
 }
 
 .experience-sub-title {
@@ -421,6 +427,7 @@ article .icon {
 
 #projects {
     position: relative;
+    min-height: 800px;
 }
 
 .color-container {
@@ -451,6 +458,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    min-height: 800px;
 }
 
 .contact-info-upper-container {
