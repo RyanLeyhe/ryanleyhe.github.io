@@ -211,6 +211,18 @@ section {
     vertical-align: bottom;
 }
 
+/* Images in Project4 */
+
+.image-container-p4 {
+    max-width: 800px;
+    width: auto;
+}
+
+.image-container-p4 img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 /* Headers */
 
 h2 {
