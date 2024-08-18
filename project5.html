@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Text Analysis Project</title>
+    <link rel="stylesheet" href="project1style.css">
+</head>
+<body class="project5demo">
+    <section id="how-it-works" class="how-it-works__section">
+        <h2>Project Overview:</h2>
+
+        <p class="description">
+            In this project, I developed a Python-based tool to analyze YouTube video transcripts and automatically extract key insights using 
+            natural language processing (NLP) techniques. The analysis focuses on identifying the most commonly mentioned consumer goods and 
+            classifying the overall genre of the video content. These features are powered by the Google Cloud Natural Language API, which provides 
+            robust tools for entity recognition and content classification. <br></br> This project is built using the Google Cloud Natural Language Python 
+            API. Specifically, I utilized the google-cloud-language client library to enable advanced NLP features like entity analysis and content 
+            classification. The seamless integration of these APIs with Python allowed for efficient and accurate processing of text data, making 
+            this tool both powerful and easy to use.
+        </p>
+        
+        <div class="image-container-p4">
+            <img src="assets/project5img2.png" alt="Project5Image2">
+        </div>
+
+        <p class="description">
+            The results of the analysis are automatically compiled and saved into a CSV file named output.csv, which is generated in the root 
+            directory of the project. This CSV file includes the analyzed data for each video, such as the most common consumer product mentioned 
+            and the likely genre classification. For your convenience, a sample output.csv populated with results from a set of YouTube text files 
+            is included with the project.
+
+            <div class="image-container-p4">
+                <img src="assets/project5img3.png" alt="Project5Image3">
+            </div>
+        </p>
+
+        <div class="p5-description">  
+            <h3>Recognition: Most Common Consumer Goods</h3>
+        
+            <p class="small-description">
+                The first feature of this tool identifies and extracts the most frequently mentioned consumer goods or products within a video 
+                transcript. By leveraging the entity recognition capabilities of the Google Cloud Natural Language API, the tool scans the text 
+                for entities specifically tagged as CONSUMER_GOOD. This allows for precise identification of products, helping to understand the 
+                focus or key topics within the video.
+            </p>
+        
+            <h3>Content Classification: Video Genre Identification</h3>
+            
+            <p class="small-description">
+                The second feature classifies the video into its most likely genre based on the content of the transcript. 
+                The classification is achieved by analyzing the text with the Google Cloud Natural Language API, which returns a 
+                list of content categories that best match the document. The tool then selects the classification with the highest 
+                confidence level, ensuring accurate genre categorization.
+            </p>
+        </div> 
+
+        <br>
+            Update 7/10/24: Google Cloud Free Trial Expired
+        </br>
+
+    </section>
+
+    <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='https://ryanleyhe.github.io'">
+            Home
+        </button>
+
+        <button class="btn btn-color-1 project-btn" onclick="openLinkInNewTab('https://github.com/RyanLeyhe/TextAnalysis')">
+            Github
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
