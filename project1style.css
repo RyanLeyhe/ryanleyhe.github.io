@@ -211,6 +211,18 @@ section {
     vertical-align: bottom;
 }
 
+/* Images in Project4 */
+
+.image-container-p4 {
+    max-width: 800px;
+    width: auto;
+}
+
+.image-container-p4 img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 /* Headers */
 
 h2 {
@@ -225,6 +237,24 @@ h2 {
     margin-bottom: 5rem;
     margin-left: 10rem;
     margin-right: 10rem;
+}
+
+.small-description {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.p5-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* Project 2*/

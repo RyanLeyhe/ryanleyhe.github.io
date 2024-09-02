@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Web App Project</title>
+    <link rel="stylesheet" href="project1style.css">
+</head>
+<body class="project4demo">
+    <section id="how-it-works" class="how-it-works__section">
+        <h2>Live Look:</h2>
+        
+        <div class="video-container">
+            <video src="videos/FlightAPI_ProjectDemo.mp4" width="900" controls autoplay muted loop></video>
+        </div>
+
+        <p class="description">
+            In this project, I developed a full-stack web application designed to help users calculate the required spending on their chosen travel 
+            rewards card to earn enough bonus miles for planned travel throughout the year. The application is built with a robust architecture that 
+            efficiently handles large datasets and provides a seamless user experience.
+            <br>
+                For the frontend, I used React and Tailwind CSS to create a dynamic and responsive user interface. The frontend allows users to input 
+                their travel plans and immediately see the results of their spending calculations. 
+                The React components are modular and reusable, making the application both scalable and maintainable.
+            </br>
+
+            <div class="image-container-p4">
+                <img src="assets/project4img2.png" alt="Project4Image2">
+            </div>
+
+        <p class="description">
+            <br>
+                On the backend, I developed a RESTful API using Node.js and Express.js. The API is responsible for managing and processing
+                flight data, which includes millions of data points. To efficiently handle this large dataset, I used MongoDB. The API includes 
+                endpoints for retrieving flight data, calculating market miles flown between airports, and other operations necessary for the 
+                application's functionality.
+            </br>
+        </p>
+
+            <div class="image-container-p4">
+                <img src="assets/project4img3.png" alt="Project4Image3">
+            </div>
+
+        <p class="description">
+            <br>
+                To ensure the application runs smoothly in production, I containerized the frontend and backend using Docker. I then used Docker Compose 
+                to manage the multi-container setup, defining the configurations for the frontend and backend services and ensuring they 
+                communicate effectively with each other.
+            </br>
+        </p>
+
+            <div class="image-container-p4">
+                <img src="assets/project4img4.png" alt="Project4Image4">
+            </div>
+
+        <p class="description">
+                The entire application is hosted on an AWS EC2 instance, providing a reliable and scalable environment for production. I configured the 
+                EC2 instance to allow inbound traffic on the necessary ports and used SSH to manage the server. The deployment process involves building 
+                the Docker images and running the containers on the EC2 instance, ensuring that the application is always available and can handle 
+                real-world traffic.
+            <br> 
+        </p>
+
+            <br>
+                Update 8/18/24: Stopped deployment of project on EC2 instance due to cost contraints. 
+            </br>
+
+        </p>
+
+    </section>
+
+    <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='https://ryanleyhe.github.io'">
+            Home
+        </button>
+
+        <button class="btn btn-color-1 project-btn" onclick="openLinkInNewTab('https://github.com/RyanLeyhe/FlightAPI')">
+            Github
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
